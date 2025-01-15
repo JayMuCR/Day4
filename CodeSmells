@@ -16,6 +16,8 @@ public class User {
         this.email = email;
     }
 
+
+//THIS METHOD IS DOING WAY TO MUCH, WE CAN BREAK IT DOWN
     // Method to calculate discount based on loyalty points
     public double calculateDiscount(int loyaltyPoints, double accountBalance) {
         double discount = 0.0;
@@ -29,6 +31,8 @@ public class User {
         return discount;
     }
 
+
+//TOO MUCH CODE
     // Method to print all orders
     public void printOrders() {
         for (String order : orders) {
@@ -36,6 +40,7 @@ public class User {
         }
     }
 
+//WE COULD APPLY SOME ENCAPSULATION OVER HERE
     // Method to apply coupons
     public void applyCoupons(List<String> coupons) {
         for (String coupon : coupons) {
@@ -43,6 +48,7 @@ public class User {
         }
     }
 
+//THIS CAN BE DELETED BECAUSE IT IS NO LONGER USED
     // Deprecated method
     public void deprecatedMethod() {
         // This method is no longer used
